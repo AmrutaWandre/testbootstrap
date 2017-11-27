@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+body {
+    background-color: white;
+}
+</style>
+</head>
+<body>
+  <center><h1 style="color:Tomato;">CONFIGURE DEVICES</h1></center>
+  <p><center>This configures each and every device according to their IP Addresses</center></p>
+    <p>              </p>
+    <h2><center>PID STATUS</center></h2>
+     <form>
+    <div class="form-group" class="col-md-6">
+      <div class="control-group">
+<center><label class="control-label" style="width:auto" for="inputEmail">Archieve status</label></center>
+<center><div class="controls" style="margin-left:auto">
+<input type="text" class="input-small" id="inputEmail" >
+</div>
+</div>
+</center>
+    <div class="row">
+    <div class="col-md-6">
+      <h3><center>Temperature</center></h3>
+        <center><img src="temp.jpg" width="60" height="60"></center>
+        <center><ul class="list-group">
+  <li class="list-group-item"><center>59</center></li>
+  <li class="list-group-item"><h4><center><button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#pageModal">VIEW</button></li>
+  <li class="list-group-item"><h4><center><button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#youModal">PID</button></li>
+</ul></center>
+    </div>
+    <div class="col-md-6">
+        <h3><center>Pressure</center></h3>
+        <center><img src="prs.jpg" width="60" height="60"></center>
+         <center><ul class="list-group">
+  <li class="list-group-item"><center>78</center></li>
+  <li class="list-group-item"><h4><button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#myModal">VIEW</button></h4></li>
+  <li class="list-group-item"><h4><button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#youModal">PID</button></h4></li>
+</ul></center>
+    </div>
+</div>
+<div class="container">
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Graph of pressure of the reactor</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" img src="pill.jpg" alt="Chania">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="pageModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Graph of temperature of the reactor </h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" img src="bit.jpg" alt="Chania">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="youModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">PID STATUS</h4>
+        </div>
+        <div class="modal-body">
+          <h2><center>Enter the values of kp,ki and kd of the PID controller</center></h2>
+          <div class="container">
+  <form>
+    <div class="form-group">
+      <div class="control-group">
+<label class="control-label" style="width:auto" for="inputEmail">Kp</label>
+<div class="controls" style="margin-left:auto">
+<input type="text" class="input-small" id="inputEmail" >
+</div>
+</div>
+     <div class="control-group">
+<label class="control-label" style="width:auto" for="inputEmail">Ki</label>
+<div class="controls" style="margin-left:auto">
+<input type="text" class="input-small" id="inputEmail" >
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" style="width:auto" for="inputEmail">Kd</label>
+<div class="controls" style="margin-left:auto">
+<input type="text" class="input-small" id="inputEmail" >
+</div>
+</div>
+<br>
+    <button type="button" class="btn btn-default">OK</button>
+  </form>
+</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
